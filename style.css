@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+* {
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+}
+
+:root {
+  --primary: #36673a;
+  --secondary: #f7f7f7;
+  --transparent: rgba(255, 255, 255, 0);
+  --light-black: #2e2c2caf;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 1s ease-in;
+}
+
+a {
+  color: var(--primary);
+  font-weight: 900;
+  text-decoration-line: underline;
+}
+
+a:hover{
+  color: black;
+  transition: all 0.1s;
+}
+
+i{
+  color:var(--primary)
+}
+
+.btn {
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 1vmin 3vmin;
+  margin-bottom: 2vmin;
+  min-width: 6rem;
+  font-size: 1.5rem;
+  text-decoration-line: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: white;
+  border-color: white;
+  color:var(--primary);
+}
+
+.btn-secondary {
+  background-color: var(--transparent);
+  border-color: var(--primary);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color:white;
+  border:none;
+}
+
+
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item.active::after,
+.nav-item:hover::after {
+  background: green;
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  border-radius: 50%;
+  margin-left: -2px;
+  bottom: -7px;
+}
+
+.nav-item a {
+  font-weight: 500;
+  color: #191919 !important;
+  text-decoration-line: none;
+}
+
+header {
+  background-image:  url("./aarbv-uni0w.webp");
+  position: relative;
+  background-size: cover;
+  background-position: 20% 65%;
+  padding: 40px 20px;
+  height: 42vh;
+  max-height: 420px;
+  min-height: 360px;
+}
+
+section {
+  overflow:hidden;
+}
+
+
+.header-image {
+  display: none;
+}
+
+.header-intro {
+ position: absolute;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(50%);
+    transform: translateX(-50%) translateY(50%);
+    max-width: 100%;
+    z-index: 2;
+} 
+
+.header-intro h1 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  padding: 0em 0em;
+}
+
+.header-intro p {
+  font-size: 1rem;
+  padding: 0.35rem 0.75rem;
+}
+
+.header-image {
+  position: absolute;
+}
+
+.header-buttons a {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.section-1 {
+  padding: 5em 7em;
+}
+
+.section1-left {
+  padding-bottom: 4em;
+  padding-right: 5rem;
+  position: relative;
+  width: 65%;
+}
+
+.section1-left h2 {
+  padding-bottom: 1.2em;
+}
+
+.section1-left p {
+  padding-bottom: 1em;
+  color: #707070;
+}
+
+.section1-left a {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  fill: #191919;
+  color: #191919;
+
+  border-radius: 35px 35px 35px 35px;
+  padding: 14px 48px 14px 48px;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.section1-right i {
+  color: var(--primary);
+  position: relative;
+  display: block;
+}
+
+.cards .card {
+  width: 22rem;
+  margin: 3vmin;
+}
+
+.services{
+  background-color: var(--secondary);
+  padding: 1rem 0.50rem;
+    padding-bottom: 10rem;
+}
+.services h1 {
+  font-size: 42px;
+}
+
+.services h1::after {
+  background: green;
+    content: "";
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5em;
+    bottom: 0.5em;
+
+}
+
+.services .row{
+  padding: 10vmin 4vmin;
+}
+
+.services .card{
+  width: 25rem;
+  margin: 3vmin;
+}
+
+.service-icon {
+  padding: 1.2rem;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.border-radius{
+  border-radius: 240px;
+  width:80%;
+}
+
+.service-icon i {
+  color: white;
+}
+
+.testimonials{
+  
+  padding: 1rem 0.50rem;
+    padding-bottom: 10rem;
+}
+
+.testimonials div {
+  padding: 0;
+  margin: 0;
+}
+
+.testimonials .title {
+  padding: 2.5rem 3rem;
+  padding-top: 0;
+  padding-bottom:1rem;
+  font-size: 2vmin;
+}
+
+.testimonials .card-text {
+  
+  padding: 1.4rem 2.5rem;
+ 
+  color: var(--light-black);
+}
+
+.testimonials h1 {
+  font-size: 42px;
+}
+
+.testimonials h1::after {
+  background: green;
+    content: "";
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5em;
+    bottom: 0.5em;
+
+}
+
+.testimonials .row{
+  padding: 10vmin 4vmin;
+}
+
+.testimonials .card{
+  width: 19rem;
+  margin: 3vmin;
+}
+
+.contact-us{
+  background-color: var(--secondary);
+  padding: 1rem 0.50rem;
+    padding-bottom: 10rem;
+}
+
+.contact-us h1 {
+  font-size: 42px;
+}
+
+.contact-us h1::after {
+  background: green;
+    content: "";
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5em;
+    bottom: 0.5em;
+
+}
+
+.form-group-with-small-helper{
+  margin-bottom:0.3rem;
+}
+.contact-us .row{
+  padding: 10vmin 4vmin;
+    padding-bottom: 2vmin;
+}
+
+small {
+  padding-left: 0.88rem;
+}
+
+.contact-us .contact-us-form{
+  max-width: 540px;
+}
+
+#map {
+  height: 560px !important;
+}
+
+footer .footer-icon {
+  
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 1.2rem;
+  display: inline-block;
+}
+
+footer .footer-icon .fa-facebook-f{
+  padding: 0.2rem;
+}
+
+.footer-icon i {
+  color: white;
+}
+
+
+
+

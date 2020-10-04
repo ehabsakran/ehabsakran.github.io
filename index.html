@@ -1,1 +1,582 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile-style.css" />
+    <title>Hello, world!</title>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFOwH0QVGB_-zrLkyvE94HLSi4Dsrmuk4&callback=initMap"
+      type="text/javascript"
+    ></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      "use strict";
+
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: {
+            lat: -34.397,
+            lng: 150.644,
+          },
+          zoom: 8,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg py-4 bg-light navbar-light">
+      <div class="container-fluid px-md-5">
+        <a class="navbar-brand ml-2" href="#">Home</a>
+
+        <button
+          class="navbar-toggler mr-2"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse mr-2 navbar-collapse flex-grow-0"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li
+              class="nav-item active mx-lg-3 mx-md-1 text-center py-sm-0 py-2"
+            >
+              <a class="nav-link" href="#">New Patients</a>
+            </li>
+            <li class="nav-item mx-lg-3 mx-md-1 text-center py-sm-0 py-2">
+              <a class="nav-link" href="#">About Tiziana</a>
+            </li>
+            <li class="nav-item mx-lg-3 mx-md-1 text-center py-sm-0 py-2">
+              <a class="nav-link" href="#">Specialties</a>
+            </li>
+            <li class="nav-item mx-lg-3 mx-md-1 text-center py-sm-0 py-2">
+              <a class="nav-link" href="#">About Chinese Medicine</a>
+            </li>
+            <li class="nav-item mx-lg-3 mx-md-1 text-center py-sm-0 py-2">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item mx-lg-3 mx-md-1 text-center py-sm-0 py-2">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center">
+      <div class="container-fluid p-0">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 header-intro">
+              <h1 class="py-2">York Traditional Acupuncture</h1>
+              <!-- <p>
+                York Traditional Acupuncture is a leading provider of
+                acupuncture in York. We specialise in pain management, IBS and
+                digestive issues, stress relief, fertility and more
+              </p> -->
+
+              <div class="header-buttons">
+                <a href="#" class="btn btn-primary">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section 1 -->
+    <div class="container-fluid section-1">
+      <div class="d-flex flex-column d-md-flex flex-lg-row">
+        <div class="section1-left pb-0">
+          <h2>We Provide Exceptional Acupuncture In York</h2>
+          <p>
+            York Traditional Acupuncture is a leading provider of acupuncture in
+            York. We specialise in stress relief, pain management, IBS and
+            digestive issues, fertility and more.
+          </p>
+          <p>
+            We are members of the British Acupuncture Council and an official
+            Appropriate Provider of Care under the NHS AQP implementation pack
+            for musculoskeletal services. In addition, we keep ourselves at the
+            forefront of the latest advancements and research in health and
+            medicine. It's safe to say your health and well being is in good
+            hands.
+          </p>
+          <p>
+            Since opening our doors in 2011, we've successfully treated hundreds
+            of people with all sorts of medical conditions.
+          </p>
+          <p>
+            Our tailored approach to acupuncture ensures our patients in York
+            and surrounding areas receive the best treatment for their
+            conditions.
+          </p>
+
+          <p class="p-0 m-0">
+            There's never been a better time to reclaim your health. If you're
+            looking for acupuncture in York, we're here for you. Drop us a
+            message or give us a call and let the path to a healthier you
+            commence.
+          </p>
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <div class="d-flex flex-row mb-1 pr-1">
+            <div class="p-2">
+              <i class="fa fa-map-marker-alt fa-2x pb-2 pr-3 mr-2 pl-2"></i>
+            </div>
+            <div class="p-2">
+              <h5>Local Business</h5>
+              <p>Serving York and surrounding areas</p>
+            </div>
+          </div>
+          <div class="d-flex flex-row mb-1 pr-1">
+            <div class="p-2">
+              <i class="fa fa-handshake fa-2x pb-2 pr-3"></i>
+            </div>
+            <div class="p-2">
+              <h5>Best acupuncturist in York</h5>
+              <p>
+                According to
+                <a
+                  href="https://threebestrated.co.uk/acupuncture-in-york"
+                  target="_blank"
+                  >ThreeBestRated</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="d-flex flex-row pr-1 pb-2">
+            <div class="p-2">
+              <i
+                class="fas fa-hand-holding-heart fa-2x pb-2 pr-3 mr-1 ml-2"
+              ></i>
+            </div>
+            <div class="pt-2">
+              <h5>14 Years of Experience</h5>
+              <p>Practicing acupuncture worldwide</p>
+            </div>
+          </div>
+          <div class="d-flex flex-row pr-1">
+            <div class="p-2">
+              <i class="fas fa-thumbs-up fa-2x pb-2 pr-3 mr-2 ml-2"></i>
+            </div>
+            <div class="pt-2">
+              <h5>Highly Rated</h5>
+              <p>
+                140+ glowing reviews on
+                <a
+                  href="https://www.freeindex.co.uk/profile(york-traditional-acupuncture)_354131.htm"
+                  target="_blank"
+                  >Free Index</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row pr-1">
+            <div class="p-2">
+              <i class="fas fa-venus fa-2x pb-0 mb-0 pr-3 mr-3 ml-3"></i>
+            </div>
+            <div class="pt-2">
+              <h5>Woman-led</h5>
+              <p class="pb-0 mb-0">Owned & led by Tiziana Bertinotti</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+
+    <section class="services">
+      <div class="container-fluid text-center">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1 class="pb-5">Our Services</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards text-center">
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-center flex-wrap align-content-sm-center"
+        >
+          <!-- First Card-->
+          <div class="card shadow-lg">
+            <div class="card-img-top pt-4 text-center">
+              <div class="">
+                <!-- <i
+                  class="fa fa-leaf fa-2x border-circle img-fluid rounded-circle"
+                ></i> -->
+                <img
+                  src="./unrecognizable-woman-showing-pain-spot-on-back-in-doctor.jpg"
+                  alt="unrecognizable woman showing pain spot on back in doctor"
+                  class="img-fluid border-radius p-2"
+                />
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <div class="title">
+                <h5 class="card-title">Acupuncture for pain relief</h5>
+              </div>
+              <p class="card-text pb-1">
+                We relieve aches and pains including back pain, headaches,
+                arthritis and more. So, If you've tried medication, ice packs
+                and hot packs and still found yourself suffering, acupuncture
+                may be exactly what you're looking for
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Card-->
+          <div class="card shadow-lg">
+            <div class="card-img-top pt-4 text-center">
+              <div class="">
+                <!-- <i
+                  class="fa fa-lemon fa-2x border-circle img-fluid rounded-circle"
+                ></i> -->
+                <img
+                  src="./man and woman holding baby converse shows2.jpg"
+                  alt="man and woman holding baby converse shoes"
+                  class="img-fluid border-radius p-2"
+                />
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <div class="title">
+                <h5 class="card-title pb-1">Acupuncture for fertility</h5>
+              </div>
+              <p class="card-text">
+                If you are planning to start a family, acupuncture can help
+                manage any underlying health issues and support your overall
+                health and well-being which in turn optimises your chances of
+                successful conception.
+              </p>
+            </div>
+          </div>
+
+          <!-- Third Card-->
+          <div class="card shadow-lg">
+            <div class="card-img-top pt-4 text-center">
+              <div class="">
+                <img
+                  src="./man-sitting-on-stair-while-smiling-Cropped.webp"
+                  alt="man sitting on stairs while smiling"
+                  class="img-fluid border-radius p-2"
+                />
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <div class="title">
+                <h5 class="card-title pb-1">Acupuncture for anxiety</h5>
+              </div>
+              <p class="card-text">
+                Acupuncture can help relieve stress by regulating
+                neurotransmitters in the brain associated with stress and pain.
+                It can also restore harmony in your body by restoring the
+                natural balance of your mental, physical and emotional health.
+              </p>
+            </div>
+          </div>
+
+          <!-- Fourth Card -->
+          <div class="card shadow-lg">
+            <div class="card-img-top pt-4 text-center">
+              <div class="">
+                <img
+                  src="./no smoking sign behind skyscrapers.jpg"
+                  alt="no smoking sign behind skyscrapers"
+                  class="img-fluid border-radius p-2"
+                />
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <div class="title">
+                <h5 class="card-title pb-1">Stop smoking with acupuncture</h5>
+              </div>
+              <p class="card-text">
+                We know it's not easy to stop smoking but acupuncture can help
+                with building your will power and eventually eradicating your
+                smoking addiction. With more than 80% success rate, why don't
+                you give it a try?
+              </p>
+            </div>
+          </div>
+
+          <!-- Fifth Card -->
+          <div class="card shadow-lg">
+            <div class="card-img-top pt-4 text-center">
+              <div class="">
+                <img
+                  src="./woman's belly with hands forming a heart.jpg"
+                  alt="woman's belly with hands forming a heart"
+                  class="img-fluid border-radius p-2"
+                />
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <div class="title">
+                <h5 class="card-title pb-1">
+                  Acupuncture for digestive issues
+                </h5>
+              </div>
+              <p class="card-text">
+                We can help you relieve IBS and other digestive issues. We use
+                an all natural approach to relieving your symptoms without
+                having to give up healthy and tasty foods. Book your acupuncture
+                sessions with us in York.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sixth Card -->
+          <div class="card shadow-lg">
+            <div class="card-img-top pt-4 text-center">
+              <div class="">
+                <img
+                  src="./pregnant lady holding belly.jpg"
+                  alt="pregnant woman holding belly"
+                  class="img-fluid border-radius p-2"
+                />
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <div class="title">
+                <h5 class="card-title pb-1">Acupuncture in pregnancy</h5>
+              </div>
+              <p class="card-text">
+                Acupuncture is ideal for expecting mothers. From morning
+                sickness, breech and posterior babies, preparing for labour and
+                postnatal care. We can support you throughout your pregnancy
+                journey from our practice in York.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container-fluid text-center">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1 class="pb-5">What Our Patients Are Saying About Us</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards text-center">
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-center flex-wrap align-content-sm-center"
+        >
+          <!-- First Card-->
+          <div class="card shadow-lg">
+            <div class="card-body">
+              <p class="card-text">
+                "Tiziana is very professional and incredibly understanding, I
+                always felt safe and relaxed during the sessions. Although I am
+                now healed, I will continue with acupuncture here purely for
+                stress relief! 100% recommend."
+              </p>
+
+              <div class="title">
+                <h5 class="card-title">Jakub Watrobski</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Card-->
+          <div class="card shadow-lg">
+            <div class="card-body">
+              <p class="card-text">
+                "I’d had acupuncture when I was living in the states. So I knew
+                how valuable it could be. When I came here to York I tried
+                different acupuncturists but nothing sustaining. Then I found
+                Tiziana! Having had acupuncture from several practitioners I
+                find Tiziana amazing…Truly it is her gift and I feel blessed
+                that she shares it so. I am very grateful for her healing."
+              </p>
+              <div class="title">
+                <h5 class="card-title">G. Wright</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Card-->
+          <div class="card shadow-lg">
+            <div class="card-body">
+              <p class="card-text">
+                "Before coming to York, I had lived and worked in many countries
+                and “frequented” acupuncturists there.I know good ones, even
+                excellent ones. But Tiziana is out of category, she is a
+                magician!"
+              </p>
+              <div class="title">
+                <h5 class="card-title">John D.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="container-fluid contact-us m-0 p-0">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="pb-5">Are You Ready to Regain Your Health?</h1>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <div class="col-md-6 col-12 pb-5 mx-auto">
+          <!-- <div id="map"></div> 
+          <p>For a personalised plan on how we can help you, 
+            visit us in our practice in York.</p>
+        </div> -->
+        <div class="col-md-12 col-12 contact-us-form mx-auto">
+          <p class="text-center">
+            For a personalised plan on how we can help you, visit us in our
+            practice in York.
+          </p>
+          <form class="px-3 px-sm-0">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                aria-describedby="nameHelp"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="form-group form-group-with-small-helper">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+
+            <div class="form-group">
+              <input
+                type="phone"
+                class="form-control"
+                id="inputPhone"
+                aria-describedby="phoneHelp"
+                placeholder="Phone"
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                type="text"
+                class="form-control"
+                id="inputPhone"
+                aria-describedby="phoneHelp"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container mx-auto pb-5">
+      <div class="d-flex flex-column flex-sm-row justify-content-around">
+        <div>
+          <h5 class="py-sm-5 py-3">Contact Us</h5>
+          <p>
+            <span class="text-muted">Email: </span
+            >info@yorktraditionalacupuncture.co.uk
+          </p>
+          <p><span class="text-muted">Phone: </span>(+44) 07788 633292</p>
+          <p>
+            <span class="text-muted">Address: </span>The Raylor Centre, James
+            Street, York, YO10 3DW
+          </p>
+
+          <div class="pt-sm-5">
+            @2020 York Traditional Acupuncture. All rights reserved.
+          </div>
+        </div>
+        <div>
+          <h5 class="py-sm-5 py-3 mt-3 mt-sm-0">Quick Links</h5>
+          <p><a href="#" class="text-muted">About Us</a></p>
+          <p><a href="#" class="text-muted">Terms of Service</a></p>
+          <p><a href="#" class="text-muted">Privacy Policy</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
