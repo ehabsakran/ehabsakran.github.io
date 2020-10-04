@@ -285,7 +285,7 @@ section {
   position: absolute;
   left: 50%;
   margin-left: -1.5em;
-  bottom: 0.5em;
+  bottom: -0.5em;
 }
 
 .testimonials .row {
