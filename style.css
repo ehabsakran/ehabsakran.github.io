@@ -43,6 +43,10 @@ h1 {
   text-align: center;
 }
 
+.card-text {
+  color: var(--light-black);
+}
+
 .btn {
   border-radius: 30px;
   font-weight: bold;
