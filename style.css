@@ -13,9 +13,9 @@
 }
 
 body {
-  font-family: "Open Sans";
+ 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   transition: all 1s ease-in;
 }
 
@@ -39,8 +39,8 @@ i {
 }
 
 h1 {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .btn {
@@ -59,10 +59,15 @@ h1 {
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
-  background-color: white;
-  border-color: white;
-  color: var(--primary);
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: white !important;
+  border-color: white !important;
+  color: var(--primary) !important;
+}
+
+.btn-primary:active:focus{
+  box-shadow: 0 0 0 0.2rem rgba(54, 103, 58, .5) !important;
 }
 
 .btn-secondary {
@@ -72,11 +77,16 @@ h1 {
 }
 
 .btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secondary:focus,
+.btn-secondary:active {
   background-color: var(--primary);
   border-color: var(--primary);
   color: white;
   border: none;
+}
+
+.btn-primary:active:focus{
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, .5) !important;
 }
 
 .nav-item {
@@ -103,7 +113,7 @@ h1 {
 }
 
 header {
-  background-image: url("./aarbv-uni0w.webp");
+  background-image: url("./images/aarbv-uni0w.webp");
   position: relative;
   background-size: cover;
   background-position: 20% 65%;
@@ -168,7 +178,7 @@ section {
 
 .section1-left p {
   padding-bottom: 1em;
-  color: #707070;
+  color: var(--light-black);
 }
 
 .section1-left a {
@@ -285,7 +295,7 @@ section {
   position: absolute;
   left: 50%;
   margin-left: -1.5em;
-  bottom: -0.5em;
+  bottom: 0.5em;
 }
 
 .testimonials .row {
@@ -404,7 +414,7 @@ footer .footer-icon .fa-facebook-f {
 .wp-block-group h1 {
   font-size: 42px;
   position: relative;
-  padding-bottom: 1.5rem!important;
+  padding-bottom: 1.5rem !important;
 }
 
 .wp-block-group h1::after {
@@ -671,4 +681,17 @@ footer .footer-icon .fa-facebook-f {
       padding-bottom: 5rem !important;
     }
   }
+}
+
+.dropdown-toggle.active-dropdown::after {
+  transform: rotate(-90deg);
+}
+
+.navbar-toggler {
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  border-bottom: none;
+  padding: 0.5rem !important;
 }
