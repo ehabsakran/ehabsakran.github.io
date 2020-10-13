@@ -11,17 +11,20 @@
   --transparent: rgba(255, 255, 255, 0);
   --light-black: #2e2c2caf;
 }
+html{
+  font-size: 17px;
+}
 
 body {
  
   font-weight: 400;
-  font-size: 17px;
+
   transition: all 1s ease-in;
 }
 
 a {
   color: var(--primary);
-  font-weight: 900;
+  font-weight: 700;
   text-decoration-line: underline;
 }
 
@@ -41,10 +44,6 @@ i {
 h1 {
   position: relative;
   text-align: center;
-}
-
-.card-text {
-  color: var(--light-black);
 }
 
 .btn {
@@ -117,7 +116,7 @@ h1 {
 }
 
 header {
-  background-image: url("./elena-putina-VvYi8TS_C6Y-unsplash.jpg");
+  background-image: url("./images/elena-putina-VvYi8TS_C6Y-unsplash.jpg");
   position: relative;
   background-size: cover;
   background-position: 20% 55%;
@@ -226,18 +225,18 @@ section {
   overflow: hidden;
 }
 
-.services,
+
 .section-contact-us {
   background-color: var(--secondary);
   padding: 1rem 0.5rem;
   padding-bottom: 10rem;
 }
-.services h1,
+
 .section-contact-us h1 {
   font-size: 42px;
 }
 
-.services h1::after,
+
 .section-contact-us h1::after {
   background: green;
   content: "";
@@ -249,14 +248,9 @@ section {
   bottom: -0.5em;
 }
 
-.services .row,
+
 .section-contact-us .row {
   padding: 10vmin 4vmin;
-}
-
-.services .card {
-  width: 25rem;
-  margin: 3vmin;
 }
 
 .service-icon {
@@ -275,34 +269,34 @@ section {
   color: white;
 }
 
-.testimonials {
+.card-section {
   padding: 1rem 0.5rem;
   padding-bottom: 10rem;
 }
 
-.testimonials div {
+.card-section div {
   padding: 0;
   margin: 0;
 }
 
-.testimonials .title {
+.card-section .title {
   padding: 2.5rem 3rem;
   padding-top: 0;
   padding-bottom: 1rem;
   font-size: 2vmin;
 }
 
-.testimonials .card-text {
+.card-section .card-text {
   padding: 1.4rem 2.5rem;
 
   color: var(--light-black);
 }
 
-.testimonials h1 {
+.card-section h1 {
   font-size: 42px;
 }
 
-.testimonials h1::after {
+.card-section h1::after {
   background: green;
   content: "";
   width: 3em;
@@ -313,12 +307,12 @@ section {
   bottom: -0.5em;
 }
 
-.testimonials .row {
+.card-section .row {
   padding: 10vmin 4vmin;
 }
 
-.testimonials .card {
-  width: 19rem;
+.card-section .card {
+  width: 22rem;
   margin: 3vmin;
 }
 
@@ -453,6 +447,11 @@ footer .footer-icon .fa-facebook-f {
   word-break: break-word;
 }
 
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+	border-color: #dc3232; /* Red */
+}
+
 @media only screen and (max-width: 1024px) {
   .services-cards {
     flex-direction: column !important;
@@ -566,7 +565,7 @@ footer .footer-icon .fa-facebook-f {
   .header-intro {
     padding: 10em 0.75em;
     font-size: 0.75rem;
-    /* padding-top: 16em; */
+    padding-top: 16em;
   }
   :root {
     --primary: #36673a;
@@ -674,9 +673,6 @@ footer .footer-icon .fa-facebook-f {
   }
 
   @media only screen and (max-width: 426px) {
-    h1{
-      font-size: 1.8rem;
-    }
     header {
       min-height: 400px;
     }
@@ -691,7 +687,7 @@ footer .footer-icon .fa-facebook-f {
     .header-intro {
       padding: 10em 0.75em;
       font-size: 0.75rem;
-      /* padding-top: 16em; */
+      padding-top: 16em;
     }
     .services,
     .testimonials,
@@ -709,7 +705,29 @@ footer .footer-icon .fa-facebook-f {
   z-index: 999;
 }
 
+.dropdown-menu{
+  font-size: 0.88rem;
+}
 .dropdown-menu li {
   border-bottom: none;
   padding: 0.5rem !important;
+  padding-bottom: 0.2rem !important;
+}
+
+.dropdown-menu li a{
+  border-bottom: none;
+  padding: 0.5rem !important;
+  padding-bottom: 0.2rem !important;
+}
+
+.dropdown-menu .nav-item.active::after,
+.dropdown-menu .nav-item:hover::after {
+  background: none;
+  content: "";
+  width:0px;
+  height:0px;
+}
+
+#navbarSupportedContent {
+  font-size: 0.9rem !important;
 }
