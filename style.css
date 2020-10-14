@@ -728,6 +728,10 @@ footer .footer-icon .fa-facebook-f {
   height:0px;
 }
 
+.dropdown-item.active, .dropdown-item:active{
+  background-color: transparent;
+}
+
 #navbarSupportedContent {
   font-size: 0.9rem !important;
 }
